@@ -8,7 +8,7 @@ pipeline {
             }
         }
 
-        stage("build java app"){
+        stage("Run java app"){
             steps {
                 sh "docker-compose down"
                 sh "docker-compose up -d"
