@@ -9,7 +9,7 @@ public class HelloController {
     
     @RequestMapping("/")
     public String index() {
-        return "OpsTree assignement version 1.0.2\n";
+        return "OpsTree assignement version 1.0.3\n";
     }
     
 }
