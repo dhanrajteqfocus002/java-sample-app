@@ -5,6 +5,6 @@ WORKDIR /tmp/
 RUN mvn package
 
 FROM openjdk
-EXPOSE 80
+EXPOSE 8080
 CMD java -jar /data/hello-world-0.1.0.jar
 COPY --from=maven_build /tmp/target/hello-world-0.1.0.jar /data/hello-world-0.1.0.jar
